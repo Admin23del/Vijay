@@ -20,9 +20,11 @@ How It Works:
 9.If they input "no," the game ends.
 
 Potential Issues & Improvements
-The random number should be generated within 1–100 instead of 0–99:
+
+1.The random number should be generated within 1–100 instead of 0–99:
+
 int randNum = rand.nextInt(100) + 1;
 
-r.nextInt() could cause an error if the input is not an integer. Using r.hasNextInt() before reading input could improve robustness.
+2.r.nextInt() could cause an error if the input is not an integer. Using r.hasNextInt() before reading input could improve robustness.
 
-The case handling for "yes" works, but "Yes" or "YES" wouldn't work as expected. Using play.equalsIgnoreCase("yes") would be better.
+3.The case handling for "yes" works, but "Yes" or "YES" wouldn't work as expected. Using play.equalsIgnoreCase("yes") would be better.
